@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FEAA Shoes: Rezumat</title>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.shop.js"></script>
+</head>
+
+<body id="checkout-page">
+
+<div id="site">
+	<header id="masthead">
+		<h1>FEAA Shoes <span class="tagline">Best shoes on the market</h1>
+	</header>
+	<div id="content">
+		<h1>Rezumat</h1>
+			<table id="checkout-cart" class="shopping-cart">
+			  <thead>
+				<tr>
+					<th scope="col">Produs</th>
+					<th scope="col">Cantitate</th>
+					<th scope="col">Pret</th>
+				</tr>
+			  </thead>
+			  <tbody>
+			  
+			  </tbody>
+			</table>
+		 <div id="pricing">
+			
+			<p id="shipping">
+				<strong>Cost Livrare</strong>: <span id="sshipping"></span>
+			</p>
+			
+			<p id="sub-total">
+				<strong>Total</strong>: <span id="stotal"></span>
+			</p>
+		 </div>
+		 
+		 <form action="order.html" method="post" id="checkout-order-form">
+		 	<h2>Detaliile dumneavoastra</h2>
+		 	
+		 	<fieldset id="fieldset-billing">
+		 		<legend>Livrare</legend>
+		 		<div>
+		 			<label for="name">Nume</label>
+		 			<input type="text" name="Nume" id="Nume" data-type="string" data-message="Acest camp nu poate fi gol" />
+		 		</div>
+		 		<div>
+		 			<label for="Email">Email</label>
+		 			<input type="text" name="email" id="email" data-type="expression" data-message="Aceasta nu este o adresa email valabila" />
+		 		</div>
+		 		<div>
+		 			<label for="Oras">Oras</label>
+		 			<input type="text" name="Oras" id="Oras" data-type="string" data-message="Acest camp nu poate fi gol" />
+		 		</div>
+		 		<div>
+		 			<label for="address">Adresa</label>
+		 			<input type="text" name="Adresa" id="Adresa" data-type="string" data-message="Acest camp nu poate fi gol" />
+		 		</div>
+		 		<div>
+		 			<label for="zip">Cod postal</label>
+		 			<input type="text" name="cod" id="cod" data-type="string" data-message="Acest camp nu poate fi gol" />
+		 		</div>
+		 		<div>
+		 			<label for="tara">Tara</label>
+		 			<select name="tara" id="tara" data-type="string" data-message="Acest camp nu poate fi gol">
+		 				<option value="">Selecteaza</option>
+		 				<option value="Ro">Romania</option>
+		 				<option value="RM">Republica Moldova</option>
+		 			</select>
+		 		</div>
+		 	</fieldset>
+		 	
+		 	<div id="shipping-same">Aceeasi cu livrarea <input type="checkbox" id="same-as-billing" value=""/></div>
+		 	
+		 	<fieldset id="fieldset-shipping">
+		 		
+		 		<legend>Facturare</legend>
+		 		
+		 				 		<div>
+		 			<label for="name">Nume</label>
+		 			<input type="text" name="Nume" id="Nume" data-type="string" data-message="Acest camp nu poate fi gol" />
+		 		</div>
+		 		<div>
+		 			<label for="Email">Email</label>
+		 			<input type="text" name="email" id="email" data-type="expression" data-message="Aceasta nu este o adresa email valabila" />
+		 		</div>
+		 		<div>
+		 			<label for="Oras">Oras</label>
+		 			<input type="text" name="Oras" id="Oras" data-type="string" data-message="Acest camp nu poate fi gol" />
+		 		</div>
+		 		<div>
+		 			<label for="address">Adresa</label>
+		 			<input type="text" name="Adresa" id="Adresa" data-type="string" data-message="Acest camp nu poate fi gol" />
+		 		</div>
+		 		<div>
+		 			<label for="zip">Cod postal</label>
+		 			<input type="text" name="cod" id="cod" data-type="string" data-message="Acest camp nu poate fi gol" />
+		 		</div>
+		 		<div>
+		 			<label for="tara">Tara</label>
+		 			<select name="tara" id="tara" data-type="string" data-message="Acest camp nu poate fi gol">
+		 				<option value="">Selecteaza</option>
+		 				<option value="Ro">Romania</option>
+		 				<option value="RM">Republica Moldova</option>
+		 			</select>
+		 		</div>
+		 	</fieldset>
+		 	
+		 	<p><input type="submit" id="submit-order" value="Confirma" class="btn" /></p>
+		 
+		 </form>
+	</div>
+	
+	
+
+</div>
+
+<footer id="site-info">
+		FEAA Shoes made by Gabriel Berehoi(Copyright © Winery)
+	</footer>
+
+</body>
+</html>	
